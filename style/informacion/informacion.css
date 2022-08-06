@@ -1,0 +1,27 @@
+.informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: var(--padding-x-movil);
+    background-color: var(--background-contactos-gris);
+}
+.informacion__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.3rem;
+}
+.informacion__img_logo{
+    height: 1.7rem;
+}
+.informacion__lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #464646;
+    font-size: 0.9rem;
+}

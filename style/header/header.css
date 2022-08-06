@@ -1,0 +1,38 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--padding-x-movil);
+    margin: auto;
+    font-family: cursive;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.header__color{
+    color: var(--color-letras-azul);
+}
+.header__logo{
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+    
+}
+.header__img_logo{
+    height: 1.1rem;
+}
+.header__button{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 7rem;
+    font-family: cursive;
+    margin: auto 0;
+    background-color: var(--background-top-and-bot-blanco);
+    border-color:  var(--background-button-azul);
+    
+    
+}
+.header__img_buscador{
+    height: 1rem;
+    margin: auto 0;
+}

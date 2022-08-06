@@ -1,0 +1,18 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-x-movil);
+    gap: 1rem;
+    background-color: var(--background-contactos-gris);
+    color: #000000af;
+}
+.contacto__titulo{
+    font-weight: bold;
+    font-family: cursive;
+}
+.contacto__nombre{
+    
+    border: none;
+    border-bottom-color: yellowgreen;
+
+}

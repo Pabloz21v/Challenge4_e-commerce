@@ -1,0 +1,26 @@
+.banner{
+    background-image: var(--background-img);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    position: relative;
+    height: fit-content;
+    color: var(--color-letras-blanco);
+}
+.banner__titulo{
+    padding: 4rem 1rem 0.5rem;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+.banner__informacion{
+    padding: 0 1rem;
+    font-size: 0.7rem;
+}
+.banner__button{
+    margin: 0.3rem 1rem 0.6rem;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    background-color: var(--background-button-azul);
+    color: var(--color-letras-blanco);
+    border: none;
+}

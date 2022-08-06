@@ -1,0 +1,13 @@
+:root{
+    --background-top-and-bot-blanco: #FFFFFF;
+    --background-main-claro: #F5F5F5;
+    --background-contactos-gris: #EAF2FD;
+    --background-button-azul:#2A7AE4;
+    --background-img: url(../../img/background_banner.jpg);
+    --color-letras-azul: #2A7AE4;
+    --color-letras-blanco: #F5F5F5;
+    --padding-x-movil: 1rem 1rem;
+    --padding-x-tablet: 1rem 3rem;
+    --padding-x-pc: 1rem 7rem;
+}
+

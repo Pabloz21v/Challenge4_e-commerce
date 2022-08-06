@@ -1,0 +1,44 @@
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.catalogo__titulo{
+    font-size: 1.5rem;
+}
+.catalogo__ver_todo{
+    align-self: center;
+    font-size: 0.8rem;
+    color: var(--color-letras-azul);
+}
+.catalogo__img{
+    margin: auto 0;
+    width: 0.6rem;
+}
+
+.catalogo__productos{
+    margin: 0 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem ;
+}
+.catalogo__producto{
+    display: flex;
+    flex-direction: column;
+    width: 8.8rem;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.catalogo__producto_precio{
+    font-weight: bold;
+}
+.catalogo__producto_informacion{
+    color: var(--color-letras-azul);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+}
