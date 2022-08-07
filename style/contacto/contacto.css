@@ -10,9 +10,12 @@
     font-weight: bold;
     font-family: cursive;
 }
-.contacto__nombre{
-    
-    border: none;
-    border-bottom-color: yellowgreen;
 
+.contacto__imput{
+
+}
+.contacto__nombre{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-letras-azul);
 }
