@@ -6,7 +6,7 @@
     padding: var(--padding-x-movil);
     margin: auto;
     font-family: cursive;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .header__color{
@@ -22,8 +22,8 @@
     height: 1.1rem;
 }
 .header__button{
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0.3rem;
     width: 7rem;
     font-family: cursive;
     margin: auto 0;
