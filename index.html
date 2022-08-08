@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/header/header.css">
-    <link rel="stylesheet" href="../style/banner/banner.css">
-    <link rel="stylesheet" href="../style/catalogo/catalogo.css">
-    <link rel="stylesheet" href="../style/informacion/informacion.css">
-    <link rel="stylesheet" href="../style/contacto/contacto.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header/header.css">
+    <link rel="stylesheet" href="style/banner/banner.css">
+    <link rel="stylesheet" href="style/catalogo/catalogo.css">
+    <link rel="stylesheet" href="style/informacion/informacion.css">
+    <link rel="stylesheet" href="style/contacto/contacto.css">
+    <link rel="stylesheet" href="style/footer/footer.css">
     
 </head>
 <body>
@@ -137,16 +138,19 @@
             </ul>
         </div>
         <form class="contacto">
-            <p class="contacto__titulo">Hable con nosotros</p>      
-            <div class="contacto__imput">
-                <input class="contacto__nombre" type="text"  id="name" placeholder=" ">
-                <label class="contacto__label" for="name" >Nombre</label>
+            <p class="contacto__titulo">Hable con nosotros</p>  
+
+            <div class="contacto__grupo">
+                <input class="contacto__imput" type="text"  id="name" placeholder=" ">
+                <label class="contacto__label" for="name" >Nombre:</label>
+                <span class="contacto__linea"></span>
             </div>
-            <div class="contacto__imput">
-                <textarea  id="message" cols="30" rows="10" placeholder=" "></textarea>
-                <label class="contacto__label" for="message" >Escribe tu mensaje</label>    
+            <div class="contacto__grupo">
+                <textarea class="contacto__imput" id="message"   rows="3" placeholder=" "></textarea>
+                <label class="contacto__label" for="message" >Escribe tu mensaje:</label>    
+                <span class="contacto__linea"></span>
             </div>
-            <button type="submit">Enviar mensaje</button>
+            <button class="contacto__enviar" type="submit">Enviar mensaje</button>
         </form>
     </main>
     <footer>
