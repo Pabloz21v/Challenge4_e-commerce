@@ -5,64 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Catálogo</title>
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/header/header.css">
+    <link rel="stylesheet" href="../../style/catalogo/catalogo.css">
+    <link rel="stylesheet" href="../../style/informacion/informacion.css">
+    <link rel="stylesheet" href="../../style/contacto/contacto.css">
+    <link rel="stylesheet" href="../../style/footer/footer.css">
 </head>
 <body>
-    <header>
-        <img src="../img/comando.png" alt="logo de alurageek">
-        <h1>Alura<span>Geek</span> </h1>
-        <button>Login</button>
-        <img src="../img/buscador.png" alt="lupa">
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img_logo" src="../../img/comando.png" alt="logo de alurageek">
+            <h1><span class="header__color">Alura</span>Geek</h1>
+        </div>
+        <img class="header__img_buscador"src="../../img/buscador.png" alt="lupa">
     </header>
     <main>
-        <div>
-            <h3>Todos los productos</h3>
-            <button>Agregar producto</button>
-        </div>
-        <div>
-            <img src="../img/Star Wars 1.png" alt="Producto">
-            <p>Producto XYZ</p>
-            <p>$ 660,00</p>
-            <p>Ver producto</p>
-        </div>
-        <div>
-            <div>
-                <h3>Consolas</h3>
-                <h5>Ver todo <img src="" alt="flecha apuntando a la derecha"> </h5>
+        <div class="catalogo__fondo">
+            <div class="catalogo__todos_productos">
+                <h3 class="catalogo__cabezera">Todos los productos</h3>
+                <button class="catalogo__boton">Agregar producto</button>
             </div>
-            <img src="../img/Consolas 1.png" alt="control">
-            <p>Control XYZ</p>
-            <p>$ 600,00</p>
-            <p>Ver producto</p>
-        </div>
-        <div>
             <div>
-                <h3>Diversos</h3>
-                <h5>Ver todo <img src="" alt="flecha apuntando a la derecha"> </h5>
+                <div class="catalogo__productos">
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Star Wars 1.png" alt="Producto1">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Star Wars 2.png" alt="Producto2">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Star Wars 3.png" alt="Producto3">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Star Wars 1.png" alt="Producto4">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                </div>
             </div>
-            <img src="../img/Diversos 3.png" alt="control">
-            <p>Camise Atari</p>
-            <p>$ 500,00</p>
-            <p>Ver producto</p>
+            <div>
+                <div class="catalogo__productos">
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Consolas 1.png" alt="Consolas">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Consolas 2.png" alt="Consolas">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Consolas 3.png" alt="Consolas">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Consolas 1.png" alt="Consolas">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="catalogo__productos">
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Diversos 1.png" alt="Diversos">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Diversos 2.png" alt="Diversos">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Diversos 3.png" alt="Diversos">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                    <div class="catalogo__producto">
+                        <img class="catalogo__producto_imagen" src="../../img/Diversos 1.png" alt="Diversos">
+                        <p class="catalogo__producto_nombre" >Producto XYZ</p>
+                        <p class="catalogo__producto_precio" >$ 660,00</p>
+                        <p class="catalogo__codigo_producto"> #555</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="../img/comando.png" alt="logo de alurageek">
-            <h2>Alura<span>Geek</span></h2>
-            <p>Quienes somos</p>
-            <p>Politica de privacidad</p>
-            <p>Programa de fidelidad</p>
-            <p>Nuestras tiendas</p>
-            <p>Quiero ser franquiciado</p>
-            <p>Anúncie aqui</p>
+        
+        <div class="informacion">
+            <h2 class="informacion__logo"><img class="informacion__img_logo" src="../../img/comando.png" alt="logo de alurageek"><span class="header__color">Alura</span>Geek</h2>
+            <ul class="informacion__lista">
+                <li>Quienes somos</li>
+                <li>Politica de privacidad</li>
+                <li>Programa de fidelidad</li>
+                <li>Nuestras tiendas</li>
+                <li>Quiero ser franquiciado</li>
+                <li>Anúncie aqui</li>
+            </ul>
         </div>
-        <div>
-            <p>Hable con nosotros</p>
-            <input type="text" name="" id="" placeholder="Nombre">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </div>
+        <form class="contacto">
+            <p class="contacto__titulo">Hable con nosotros</p>  
+
+            <div class="contacto__grupo">
+                <input class="contacto__imput" type="text"  id="name" placeholder=" ">
+                <label class="contacto__label" for="name" >Nombre:</label>
+            </div>
+            <div class="contacto__grupo">
+                <textarea class="contacto__imput" id="message"   rows="3" placeholder=" "></textarea>
+                <label class="contacto__label" for="message" >Escribe tu mensaje:</label>    
+            </div>
+            <button class="contacto__enviar" type="submit">Enviar mensaje</button>
+        </form>
     </main>
-    <footer>
-        <p>Desarrollado por Pablo Sebastian Acevedo</p>
+    <footer class="footer">
+        <p>Desarrollado por Acevedo, Pablo Sebastian </p>
         <p>2022</p> 
     </footer>
 </body>

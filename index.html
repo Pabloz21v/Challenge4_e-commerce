@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
+    <title>E-commerce de AluraGeek</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/header/header.css">
@@ -21,7 +21,8 @@
             <img class="header__img_logo" src="img/comando.png" alt="logo de alurageek">
             <h1><span class="header__color">Alura</span>Geek</h1>
         </div>
-        <button class="header__button header__color">Login</button>
+        
+        <button class="header__button header__color" id="botonLogin">Login</button>
         <img class="header__img_buscador"src="img/buscador.png" alt="lupa">
     </header>
     <main>
@@ -143,12 +144,10 @@
             <div class="contacto__grupo">
                 <input class="contacto__imput" type="text"  id="name" placeholder=" ">
                 <label class="contacto__label" for="name" >Nombre:</label>
-                <span class="contacto__linea"></span>
             </div>
             <div class="contacto__grupo">
                 <textarea class="contacto__imput" id="message"   rows="3" placeholder=" "></textarea>
                 <label class="contacto__label" for="message" >Escribe tu mensaje:</label>    
-                <span class="contacto__linea"></span>
             </div>
             <button class="contacto__enviar" type="submit">Enviar mensaje</button>
         </form>

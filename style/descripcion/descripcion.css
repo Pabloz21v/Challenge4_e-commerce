@@ -1,0 +1,25 @@
+.descripcion{
+    display: flex;
+    background-color: var(--background-main-claro);
+    padding: var(--padding-x-movil);
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.descripcion__imagen{
+    display: flex;
+    width: 90.4vw;
+    height: 12rem;
+    object-fit: contain;
+}
+.descripcion__producto{
+    font-size: 1.3rem;
+}
+.descripcion__precio{
+    font-weight: bold;
+}
+.descripcion__comentarios{
+    display: flex;
+    justify-content: center;
+}
+    

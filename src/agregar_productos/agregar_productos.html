@@ -5,44 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek - Agregar producto</title>
+    <link rel="stylesheet" href="../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/header/header.css">
+    <link rel="stylesheet" href="../../style/agregar_producto/agregar_producto.css">
+    <link rel="stylesheet" href="../../style/informacion/informacion.css">
+    <link rel="stylesheet" href="../../style/contacto/contacto.css">
+    <link rel="stylesheet" href="../../style/footer/footer.css">
 </head>
 <body>
-    <header>
-        <img src="../img/comando.png" alt="logo de AluraGeek">
-        <h1>Alura<span>Geek</span></h1>
-        <button>Menu Adminitrador</button>
-        <img src="../img/buscador.png" alt="imagen de una lupa">
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img_logo" src="../../img/comando.png" alt="logo de alurageek">
+            <h1><span class="header__color">Alura</span>Geek</h1>
+        </div>
+        
+        <button class="header__button_administrador header__color" id="botonLogin">Menú Administrador</button>
+        <img class="header__img_buscador"src="../../img/buscador.png" alt="lupa">
     </header>
     <main>
         <div>
-            <p>Agregar nuevo producto</p>
-            <input type="image" src="" alt="" placeholder="URL de la imagen">
-            <input type="text" name="" id="" placeholder="Categoria">
-            <input type="text" name="" id="" placeholder="Nombre del producto">
-            <input type="number" name="" id="" placeholder="Precio del producto">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Descripcion del producto"></textarea>
-            <button>Agregar Producto</button>
+            <form class="agregar">
+                <p class="agregar__titulo">Agregar nuevo producto</p>  
+                <div class="agregar__grupo">
+                    <input class="agregar__imput" type="image"  id="insertarImagen" placeholder=" ">
+                    <label class="agregar__label" for="insertarImagen" >URL de la imagen:</label>
+                </div>
+                <div class="agregar__grupo">
+                    <input class="agregar__imput" type="text"  id="agregarCategoria" placeholder=" ">
+                    <label class="agregar__label" for="agregarCategoria" >Categoria:</label>
+                </div>
+                <div class="agregar__grupo">
+                    <input class="agregar__imput" type="text"  id="agregarNombreProducto" placeholder=" ">
+                    <label class="agregar__label" for="agregarNombreProducto" >Nombre del producto:</label>
+                </div>
+                <div class="agregar__grupo">
+                    <input class="agregar__imput" type="number"  id="agregarPrecioProducto" placeholder=" ">
+                    <label class="agregar__label" for="agregarPrecioProducto" >Precio del producto:</label>
+                </div>
+                <div class="agregar__grupo">
+                    <textarea class="agregar__imput" id="descripcion_producto"   rows="3" placeholder=" "></textarea>
+                    <label class="agregar__label" for="descripcion_producto" >Descripcion del producto:</label>    
+                </div>
+                <button class="agregar__enviar" type="submit">Agregar Producto</button>
+            </form>
+
         </div>
-        <div>
-            <img src="../img/comando.png" alt="logo de alurageek">
-            <h2>Alura<span>Geek</span></h2>
-            <p>Quienes somos</p>
-            <p>Politica de privacidad</p>
-            <p>Programa de fidelidad</p>
-            <p>Nuestras tiendas</p>
-            <p>Quiero ser franquiciado</p>
-            <p>Anúncie aqui</p>
+        <div class="informacion">
+            <h2 class="informacion__logo"><img class="informacion__img_logo" src="../../img/comando.png" alt="logo de alurageek"><span class="header__color">Alura</span>Geek</h2>
+            <ul class="informacion__lista">
+                <li>Quienes somos</li>
+                <li>Politica de privacidad</li>
+                <li>Programa de fidelidad</li>
+                <li>Nuestras tiendas</li>
+                <li>Quiero ser franquiciado</li>
+                <li>Anúncie aqui</li>
+            </ul>
         </div>
-        <div>
-            <p>Hable con nosotros</p>
-            <input type="text" name="" id="" placeholder="Nombre">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </div>
+        <form class="contacto">
+            <p class="contacto__titulo">Hable con nosotros</p>  
+
+            <div class="contacto__grupo">
+                <input class="contacto__imput" type="text"  id="name" placeholder=" ">
+                <label class="contacto__label" for="name" >Nombre:</label>
+            </div>
+            <div class="contacto__grupo">
+                <textarea class="contacto__imput" id="message"   rows="3" placeholder=" "></textarea>
+                <label class="contacto__label" for="message" >Escribe tu mensaje:</label>    
+            </div>
+            <button class="contacto__enviar" type="submit">Enviar mensaje</button>
+        </form>
     </main>
-    <footer>
-        <p>Desarrollado por Pablo Sebastian Acevedo</p>
-        <p>2022</p>
+    <footer class="footer">
+        <p>Desarrollado por Acevedo, Pablo Sebastian </p>
+        <p>2022</p> 
     </footer>
 </body>
 </html>
