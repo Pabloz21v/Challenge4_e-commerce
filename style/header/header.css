@@ -8,6 +8,7 @@
     font-family: cursive;
     font-size: 1.1rem;
     font-weight: bold;
+    gap: 1rem;
 }
 .header__color{
     color: var(--color-letras-azul);
@@ -40,7 +41,34 @@
     background-color: var(--background-top-and-bot-blanco);
     border-color:  var(--background-button-azul);
 }
+
+
+.header__bloque_buscador{
+    background-color: var(--background-main-claro);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+.header__buscador{
+    border: none;
+    background-color: var(--background-main-claro);
+    outline: none;
+    height: 1.3rem;
+    width: 95%;
+    margin: 0.2rem 0;
+}
+.header__buscador:focus{
+    background-color: var(--background-main-claro);
+}
 .header__img_buscador{
-    height: 1rem;
-    margin: auto 0;
+    height: 1.3rem;
+    margin: auto;
+}
+input#searchId.header__buscador{
+    background-color: var(--background-main-claro);
 }
