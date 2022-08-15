@@ -2,7 +2,7 @@ const botonLogin = document.querySelector("#botonLogin")
 const verTodo = document.querySelectorAll(".catalogo__direccionarProductos")
 const boton_agregarProducto = document.querySelector("#catalogo__boton_agregarProducto")
 const boton__acreditarLogin = document.querySelector("#boton__acreditarLogin")
-const catalogo__producto = document.querySelectorAll(".catalogo__producto")
+const descripcionProducto = document.querySelectorAll(".catalogo__producto")
 const indexLogo = document.querySelector(".header__logo")
 
 if (botonLogin) {
@@ -19,10 +19,10 @@ verTodo.forEach(element => { element.addEventListener("click", (event)=>{
         document.querySelectorAll(".catalogo__direccionarProductos") = direccionarProductos;
 })});
 
-catalogo__producto.forEach(element => { element.addEventListener("click", (event)=>{
+descripcionProducto.forEach(element => { element.addEventListener("click", (event)=>{
     event.preventDefault();
         if (element.baseURI.includes("index")) {
-            let direccionarDescripcionProducto = document.location='../src/descripcion_producto/descripcion_producto.html';
+            let direccionarDescripcionProducto = document.location='src/descripcion_producto/descripcion_producto.html';
             document.querySelectorAll(".catalogo__producto") = direccionarDescripcionProducto;
         } else {
             let direccionarDescripcionProducto = document.location='../descripcion_producto/descripcion_producto.html';
