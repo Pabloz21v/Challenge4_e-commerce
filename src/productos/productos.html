@@ -21,13 +21,12 @@
         </div>
         <img class="header__img_buscador"src="../../img/buscador.png" alt="lupa">
     </header>
-    <main>
-        <div class="catalogo__fondo">
+    <main class="catalogo__fondo">
+        <div >
             <div class="catalogo__todos_productos">
                 <h3 class="catalogo__cabezera">Todos los productos</h3>
-                <button class="catalogo__boton">Agregar producto</button>
+                <button class="catalogo__boton" id="catalogo__boton_agregarProducto">Agregar producto</button>
             </div>
-            <div>
                 <div class="catalogo__productos">
                     <div class="catalogo__producto">
                         <img class="catalogo__producto_imagen" src="../../img/Star Wars 1.png" alt="Producto1">
@@ -54,8 +53,6 @@
                         <p class="catalogo__codigo_producto"> #555</p>
                     </div>
                 </div>
-            </div>
-            <div>
                 <div class="catalogo__productos">
                     <div class="catalogo__producto">
                         <img class="catalogo__producto_imagen" src="../../img/Consolas 1.png" alt="Consolas">
@@ -82,8 +79,7 @@
                         <p class="catalogo__codigo_producto"> #555</p>
                     </div>
                 </div>
-            </div>
-            <div>
+
                 <div class="catalogo__productos">
                     <div class="catalogo__producto">
                         <img class="catalogo__producto_imagen" src="../../img/Diversos 1.png" alt="Diversos">
@@ -110,9 +106,8 @@
                         <p class="catalogo__codigo_producto"> #555</p>
                     </div>
                 </div>
-            </div>
+            
         </div>
-        
         <div class="informacion">
             <h2 class="informacion__logo"><img class="informacion__img_logo" src="../../img/comando.png" alt="logo de alurageek"><span class="header__color">Alura</span>Geek</h2>
             <ul class="informacion__lista">
@@ -126,7 +121,6 @@
         </div>
         <form class="contacto">
             <p class="contacto__titulo">Hable con nosotros</p>  
-
             <div class="contacto__grupo">
                 <input class="contacto__imput" type="text"  id="name" placeholder=" ">
                 <label class="contacto__label" for="name" >Nombre:</label>
@@ -142,5 +136,7 @@
         <p>Desarrollado por Acevedo, Pablo Sebastian </p>
         <p>2022</p> 
     </footer>
+
+    <script src="../../script/botons.js"></script>
 </body>
 </html>
