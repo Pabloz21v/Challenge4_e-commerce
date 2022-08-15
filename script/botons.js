@@ -50,7 +50,7 @@ if (boton__acreditarLogin) {
 indexLogo.addEventListener("click", (event)=>{
     event.preventDefault();
 
-    if (indexLogo.baseURI.includes(("index"))) {
+    if (indexLogo.baseURI.includes("index")) {
         let direcionarIndex = document.location='index.html';
         document.querySelector(".header__logo") = direcionarIndex;
     } else {
