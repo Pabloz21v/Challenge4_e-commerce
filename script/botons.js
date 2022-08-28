@@ -3,7 +3,7 @@ const verTodo = document.querySelectorAll(".catalogo__direccionarProductos")
 const boton_agregarProducto = document.querySelector("#catalogo__boton_agregarProducto")
 const boton__acreditarLogin = document.querySelector("#boton__acreditarLogin")
 const descripcionProducto = document.querySelectorAll(".catalogo__producto")
-const indexLogo = document.querySelector(".header__logo")
+const enviarAInicio = document.querySelector(".header__logo")
 
 if (botonLogin) {
     botonLogin.addEventListener("click", (event)=>{
@@ -21,7 +21,7 @@ verTodo.forEach(element => { element.addEventListener("click", (event)=>{
 
 descripcionProducto.forEach(element => { element.addEventListener("click", (event)=>{
     event.preventDefault();
-        if (element.baseURI.includes("index") || indexLogo.baseURI == "https://pabloz21v.github.io/Challenge4_e-commerce/") {
+        if (element.baseURI.includes("index") || element.baseURI == "https://pabloz21v.github.io/Challenge4_e-commerce/") {
             let direccionarDescripcionProducto = document.location='src/descripcion_producto/descripcion_producto.html';
             document.querySelectorAll(".catalogo__producto") = direccionarDescripcionProducto;
         } else {
@@ -47,10 +47,10 @@ if (boton__acreditarLogin) {
     })
 }
 
-indexLogo.addEventListener("click", (event)=>{
+enviarAInicio.addEventListener("click", (event)=>{
     event.preventDefault();
 
-    if (indexLogo.baseURI.includes("index") || indexLogo.baseURI == "https://pabloz21v.github.io/Challenge4_e-commerce/") {
+    if (enviarAInicio.baseURI.includes("index") || enviarAInicio.baseURI == "https://pabloz21v.github.io/Challenge4_e-commerce/") {
         let direcionarIndex = document.location='index.html';
         document.querySelector(".header__logo") = direcionarIndex;
     } else {
